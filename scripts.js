@@ -1,16 +1,20 @@
-// Main Container from Index
 const container = document.querySelector('.container');
 
 
-function makeRows(rows){
-    for (i = 0; i < rows; i++){
-        let row = document.createElement('div');
-        container.appendChild(row).className='gridRow';
+for (let i = 0; i < 16; i++){
+    for(let j = 0; j < 16; j++){
+        let square = document.createElement('div');
+        square.className = 'square';
+        container.appendChild(square);
 
-        
-    }
-    
-    }
 
- makeRows(256);
+square.onmouseover = makeBlack;
+
+function makeBlack(){
+    square.style.backgroundColor = 'black';
+}
+}
+}
+
+
 
