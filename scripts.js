@@ -14,8 +14,8 @@ for (let i = 0; i < x; i++){
         container.appendChild(square);   
 
         //Maybe try adjusting these to be percentages?
-        square.style.width = 600 / x + 'px';
-        square.style.height = 600 / x + 'px';
+        square.style.width = 100 / x + '%';
+        square.style.height = 100 / x + '%';
 
  square.onmouseover = makeBlack;
         function makeBlack (){
